@@ -118,5 +118,8 @@ jobs:
         name: github-actions[bot]
         email: github-actions@noreply.github.com
 
+    # 使用官方代替下面那个失效的
+    - name: Ping to keep workflow alive
+      run: echo "Keepalive ping at $(date)"
     # - name: keep alive # 这个仓库有问题
       # uses: gautamkrishnar/keepalive-workflow@master # keep workflows from being suspended when no commit for a long time
